@@ -56,7 +56,7 @@ input {
 select,
 input,
 textarea {
-    font-size: 12px;
+    font-size: 12px/150% Arial,Verdana,"\5b8b\4f53";
     margin: 0;
 }
 
@@ -259,13 +259,32 @@ em {
 /*topbanner end*/
 
 .logo {
-    width: 360px;
+    width: 400px;
     height: 75px;
     background-color: pink;
     float: left;
     padding-top: 25px;
     background: url(../images/logo.png) no-repeat 0 25px;
     position: relative;
+    /* 
+    cursor:default 默认正常鼠标指针
+    cursor:hand 和cursor:text  文本选择效果
+    cursor:move 移动选择效果
+    cursor:pointer 手指形状 链接选择效果
+    cursor:url(url图片地址) 设置对象为图片
+
+    */
+    /* cursor: pointer; */
+}
+
+.logo b{
+    display: block;
+    width: 110px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    background: url(../images/l-icon.png) no-repeat;
 }
 
 .jd-a {
@@ -559,3 +578,4 @@ em {
     line-height: 18px;
     margin-bottom: 10px;
 }
+
